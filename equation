@@ -1,0 +1,57 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>  
+using namespace std;
+
+int main() {
+    double a, b, c;
+
+    cout << "=====================================\n";
+    cout << "  Quadratic Equation Solver\n";
+    cout << "  Equation: ax^2 + bx + c = 0\n";
+    cout << "=====================================\n\n";
+
+    cout << "Enter coefficients (a b c): ";
+    cin >> a >> b >> c;
+
+    cout << fixed << setprecision(3);
+
+    if (a == 0) {
+        if (b != 0) {
+            double x = -c / b;
+            cout << "\nThis is a linear equation." << endl;
+            cout << "Root: x = " << x << endl;
+        } else {
+            cout << "\nNo solution (a and b cannot both be 0)." << endl;
+        }
+        return 0;
+    }
+
+    double D = b * b - 4 * a * c; 
+
+    cout << "\nDiscriminant (D) = " << D << endl;
+
+    if (D > 0) {
+        double x1 = (-b + sqrt(D)) / (2 * a);
+        double x2 = (-b - sqrt(D)) / (2 * a);
+        cout << "There are two real roots:\n";
+        cout << "x1 = " << x1 << "\n";
+        cout << "x2 = " << x2 << endl;
+    } else if (D == 0) {
+        double x = -b / (2 * a);
+        cout << "There is one real root:\n";
+        cout << "x = " << x << endl;
+    } else {
+        double realPart = -b / (2 * a);
+        double imagPart = sqrt(-D) / (2 * a);
+        cout << "No real roots. Complex roots:\n";
+        cout << "x1 = " << realPart << " + " << imagPart << "i\n";
+        cout << "x2 = " << realPart << " - " << imagPart << "i\n";
+    }
+
+    cout << "\n=====================================\n";
+    cout << "  Calculation complete.\n";
+    cout << "=====================================\n";
+
+    return 0;
+}
