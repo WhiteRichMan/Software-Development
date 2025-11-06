@@ -1,0 +1,62 @@
+using System;
+using System.Globalization;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("=====================================");
+        Console.WriteLine("       Simple Console Calculator     ");
+        Console.WriteLine("=====================================\n");
+
+        Console.Write("Enter first number (a): ");
+        double a = ReadNumber();
+
+        Console.Write("Enter operation (+, -, *, /): ");
+        char op = Console.ReadKey().KeyChar;
+        Console.WriteLine();
+
+        Console.Write("Enter second number (b): ");
+        double b = ReadNumber();
+
+        double result = 0;
+        bool valid = true;
+
+        switch (op)
+        {
+            case '+': result = a + b; break;
+            case '-': result = a - b; break;
+            case '*': result = a * b; break;
+            case '/':
+                if (b == 0)
+                {
+                    Console.WriteLine("\nError: Division by zero is not allowed.");
+                    valid = false;
+                }
+                else result = a / b;
+                break;
+            default:
+                Console.WriteLine("\nInvalid operation!");
+                valid = false;
+                break;
+        }
+
+        if (valid)
+            Console.WriteLine($"\nResult: {a} {op} {b} = {result}");
+
+        Console.WriteLine("\n=====================================");
+        Console.WriteLine("Calculation complete.");
+        Console.WriteLine("=====================================");
+    }
+
+    static double ReadNumber()
+    {
+        string input = Console.ReadLine();
+        double num;
+        if (double.TryParse(input.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out num))
+            return num;
+        Console.WriteLine("ERROR: Invalid number!");
+        Environment.Exit(0);
+        return 0;
+    }
+}
