@@ -56,7 +56,9 @@ Simple Python code was added to create a table (list).
 table = [0] * 10
 print(table)
 
-screen 2
+<p align="center">
+  <img src="Screen2.png">
+</p>
 
 ---
 
@@ -68,7 +70,10 @@ The added code was saved as a new commit.
 
 git commit -am "Create table"
 
-Screen 3
+
+<p align="center">
+  <img src="Screen3.png">
+</p>
 
 ---
 
@@ -80,7 +85,10 @@ import random
 table = [random.randint(0, 99) for _ in range(10)]
 print(table)
 
-Screen 5
+
+<p align="center">
+  <img src="Screen5.png">
+</p>
 
 ---
 
@@ -92,7 +100,10 @@ The changes were committed.
 
 git commit -am "Initialize table with random values"
 
-Screen 4
+
+<p align="center">
+  <img src="Screen4.png">
+</p>
 
 ---
 
@@ -103,7 +114,10 @@ Sorting of table elements was added.
 table.sort()
 print(table)
 
-Screen 4
+
+<p align="center">
+  <img src="Screen4.png">
+</p>
 
 ---
 
@@ -115,7 +129,10 @@ Sorting functionality was committed.
 
 git commit -am "Sort table elements"
 
-Screen 5
+
+<p align="center">
+  <img src="Screen5.png">
+</p>
 
 ---
 
@@ -127,7 +144,10 @@ Commit history was checked.
 
 git log
 
-Screen 6 
+
+<p align="center">
+  <img src="Screen6.png">
+</p>
 
 ---
 
@@ -139,7 +159,10 @@ Line-by-line code history was checked.
 
 git blame funvtional.py
 
-Screen 7
+
+<p align="center">
+  <img src="Screen7.png">
+</p>
 
 ---
 
@@ -152,7 +175,10 @@ Different versions of the project were checked.
 git checkout <commit-id>
 git checkout main
 
-Screen 8 
+
+<p align="center">
+  <img src="Screen8.png">
+</p>
 
 ---
 
@@ -170,7 +196,10 @@ Uncommitted changes were reverted.
 
 git restore main.py
 
-Screen 9
+
+<p align="center">
+  <img src="Screen9.png">
+</p>
 
 ---
 
@@ -182,7 +211,9 @@ Command used:
 
 git push origin main
 
-Screen 10 
+<p align="center">
+  <img src="Screen10.png">
+</p>
 
 ---
 
@@ -190,7 +221,9 @@ Screen 10
 
 The local project and repository were removed.
 
-Screen 11
+<p align="center">
+  <img src="Screen11.png">
+</p>
 
 ---
 
@@ -202,7 +235,9 @@ The project was cloned again from the remote repository.
 
 git clone <repo-url>
 
-Screen 12
+<p align="center">
+  <img src="Screen12.png">
+</p>
 
 ---
 
@@ -216,7 +251,9 @@ git tag v1.0
 git checkout v1.0
 git checkout main
 
-Screen 13
+<p align="center">
+  <img src="Screen13.png">
+</p>
 
 ---
 
@@ -263,8 +300,9 @@ Changes from the branch were merged into the main branch.
 git checkout main
 git merge improvement
 
-Screen 14 
-
+<p align="center">
+  <img src="Screen14.png">
+</p>
 ---
 
 ## z) Share repository with a friend
