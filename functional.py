@@ -17,3 +17,6 @@ draw_cat()
 import random
 table = [random.randint(0, 99) for _ in range(10)]
 print(table)
+
+table.sort()
+print(table)
