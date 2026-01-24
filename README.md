@@ -42,6 +42,8 @@ The initial project structure was saved to Git history.
 git add .
 git commit -m "Initial empty project"
 
+screen 1 
+
 ----
 
 ## e) Add simple code (create table)
@@ -50,6 +52,8 @@ Simple Python code was added to create a table (list).
 
 table = [0] * 10
 print(table)
+
+screen 2
 
 ---
 
@@ -61,6 +65,8 @@ The added code was saved as a new commit.
 
 git commit -am "Create table"
 
+Screen 3
+
 ---
 
 ## g) Initialize table with random values
@@ -70,6 +76,8 @@ The table was filled with random numbers.
 import random
 table = [random.randint(0, 99) for _ in range(10)]
 print(table)
+
+Screen 5
 
 ---
 
@@ -81,6 +89,8 @@ The changes were committed.
 
 git commit -am "Initialize table with random values"
 
+Screen 4
+
 ---
 
 ## i) Sort table elements
@@ -89,6 +99,8 @@ Sorting of table elements was added.
 
 table.sort()
 print(table)
+
+Screen 4
 
 ---
 
@@ -100,6 +112,8 @@ Sorting functionality was committed.
 
 git commit -am "Sort table elements"
 
+Screen 5
+
 ---
 
 ## k) Look at code history
@@ -110,6 +124,8 @@ Commit history was checked.
 
 git log
 
+Screen 6 
+
 ---
 
 ## l) Look at code annotations
@@ -118,7 +134,9 @@ Line-by-line code history was checked.
 
 **Command used:**
 
-git blame main.py
+git blame funvtional.py
+
+Screen 7
 
 ---
 
@@ -129,7 +147,9 @@ Different versions of the project were checked.
 **Commands used:**
 
 git checkout <commit-id>
-git checkout master
+git checkout main
+
+Screen 8 
 
 ---
 
@@ -147,6 +167,8 @@ Uncommitted changes were reverted.
 
 git restore main.py
 
+Screen 9
+
 ---
 
 ## p) Push project to remote repository
@@ -155,13 +177,17 @@ All commits were uploaded to the remote repository.
 
 Command used:
 
-git push origin master
+git push origin main
+
+Screen 10 
 
 ---
 
 ## r) Delete local project and repository
 
 The local project and repository were removed.
+
+Screen 11
 
 ---
 
@@ -173,9 +199,11 @@ The project was cloned again from the remote repository.
 
 git clone <repo-url>
 
+Screen 12
+
 ---
 
-## t) Create tag and switch between tag and master
+## t) Create tag and switch between tag and main
 
 A tag was created to mark a project version and switching was tested.
 
@@ -183,13 +211,15 @@ A tag was created to mark a project version and switching was tested.
 
 git tag v1.0
 git checkout v1.0
-git checkout master
+git checkout main
+
+Screen 13
 
 ---
 
-## u) Create new branch from master
+## u) Create new branch from main
 
-A new branch was created from the master branch.
+A new branch was created from the main branch.
 
 **Commands used:**
 
@@ -223,12 +253,14 @@ git commit -am "Improve sorting algorithm"
 
 ## y) Merge branch into master
 
-Changes from the branch were merged into the master branch.
+Changes from the branch were merged into the main branch.
 
 **Commands used:**
 
-git checkout master
+git checkout main
 git merge improvement
+
+Screen 14 
 
 ---
 
