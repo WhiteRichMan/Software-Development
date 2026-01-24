@@ -5,6 +5,7 @@
 # Software-Development
 # GIT – Short Report
 
+
 **Language:** Python  
 **IDE:** VS Code  
 **Git server:** GitHub / GitLab  
@@ -42,7 +43,9 @@ The initial project structure was saved to Git history.
 git add .
 git commit -m "Initial empty project"
 
-![Cute cat](screen 1.png)
+<p align="center">
+  <img src="screen 1.png" width="300">
+</p>
 
 ----
 
