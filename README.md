@@ -25,7 +25,7 @@ It is used to store the project online.
 The remote repository was cloned to the local machine.
 
 Command used:
-```bash
+
 git clone <repo-url>
 
 ## c) Create empty local project
