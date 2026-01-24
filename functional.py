@@ -23,3 +23,5 @@ table.reverse()
 print(table)
 
 
+table = sorted(table, reverse=True)
+print(table)
