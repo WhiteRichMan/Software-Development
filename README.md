@@ -23,7 +23,7 @@ It is used to store the project online.
 ## b) Clone the empty repository
 The remote repository was cloned to the local machine.
 
-**Command used:**
+Command used:
 ```bash
 git clone <repo-url>
 
