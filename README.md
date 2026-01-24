@@ -44,7 +44,7 @@ git add .
 git commit -m "Initial empty project"
 
 <p align="center">
-  <img src="screen 1.png" width="300">
+  <img src="screen1.png" width="300">
 </p>
 
 ----
