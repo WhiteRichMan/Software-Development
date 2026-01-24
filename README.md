@@ -42,7 +42,7 @@ The initial project structure was saved to Git history.
 git add .
 git commit -m "Initial empty project"
 
-screen 1 
+![Cute cat](screen 1.png)
 
 ----
 
