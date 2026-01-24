@@ -1,3 +1,7 @@
+<h3>Hello 👋 I'm Ryslan Project manager💻</h3>
+
+![Header](https://github.com/WhiteRichMan/WhiteRichMan/blob/main/assets/animef.gif)
+
 # Software-Development
 # GIT – Short Report
 
@@ -264,3 +268,8 @@ git status
 git branch
 git tag
 git pull
+
+
+<h2>Languages for tasks🌐 </h2>
+
+![Python](https://img.shields.io/badge/-Python-grey?style=for-the-badge&logo=Python)
