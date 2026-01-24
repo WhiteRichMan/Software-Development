@@ -1,0 +1,1 @@
+print(" This is a functional module for AI project. ")
