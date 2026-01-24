@@ -1,4 +1,4 @@
-<h3>Hello 👋 I'm Ruslan Project manager💻</h3>
+<h3>Hello 👋 I'm Ruslan Project manager here my GIT – Short Report💻</h3>
 
 ![Header](https://github.com/WhiteRichMan/WhiteRichMan/blob/main/assets/animef.gif)
 
